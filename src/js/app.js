@@ -28,7 +28,7 @@ App = {
     }
     // If no injected web3 instance is detected, fall back to Ganache
     else {
-      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+      App.web3Provider = new Web3.providers.HttpProvider('http://localhost:');
     }
 
     web3 = new Web3(App.web3Provider);
@@ -37,13 +37,13 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON('LaundererDetector.json', function(data) {
+    $.getJSON('transactiondetector.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var LaundererArtifact = data;
-      App.contracts.LaundererDetector = TruffleContract(LaundererArtifact);
+      App.contracts.transactiondetector = TruffleContract(LaundererArtifact);
     
       // Set the provider for our contract
-      App.contracts.LaundererDetector.setProvider(App.web3Provider);
+      App.contracts.transactiondetector.setProvider(App.web3Provider);
     
       // Use our contract to retrieve and mark the adopted pets
       // return App.markAdopted();

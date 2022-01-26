@@ -1,5 +1,5 @@
-const CryptocurrencyLaundererDetector = artifacts.require("CryptocurrencyLaundererDetector");
+const transactiondetector = artifacts.require("CryptocurrencyLaundererDetector");
 
 module.exports = function (deployer) {
-  deployer.deploy(CryptocurrencyLaundererDetector);
+  deployer.deploy(transactiondetector);
 };
