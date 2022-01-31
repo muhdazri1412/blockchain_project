@@ -38573,8 +38573,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
       /**
        * Convert the passed BBAN to an IBAN for this country specification.
-       * Please note that <i>"generation of the IBAN shall be the exclusive responsibility of the bank/branch servicing the account"</i>.
-       * This method implements the preferred algorithm described in http://en.wikipedia.org/wiki/International_Bank_Account_Number#Generating_IBAN_check_digits
+       * Please note that <i>"generation of the IBAN shall be the exclusive responsibility of the NGO/branch servicing the account"</i>.
+       * This method implements the preferred algorithm described in http://en.wikipedia.org/wiki/International_NGO_Account_Number#Generating_IBAN_check_digits
        *
        * @method fromBban
        * @param {String} bban the BBAN to convert to IBAN

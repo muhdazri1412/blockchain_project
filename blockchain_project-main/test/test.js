@@ -14,7 +14,7 @@
 
 const transactiondetector = artifacts.require("transactiondetector");
 
-contract("Check for transaction", function(accounts){
+contract("Check for transactions", function(accounts){
 
 
 
@@ -56,7 +56,7 @@ contract("Check for transaction", function(accounts){
    });
 });
 
-contract("Check for money laundering (deposit exceeding threshold)", function(accounts){
+contract("Check for possible money laundering (deposit exceeding threshold)", function(accounts){
 
    it("DEPOSIT 15 ether from account 3", async () => {
       const NGO = await transactiondetector.deployed();
