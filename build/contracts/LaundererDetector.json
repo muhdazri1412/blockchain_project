@@ -168,7 +168,7 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "getHugeDonors",
+      "name": "getHugeTransactors",
       "outputs": [
         {
           "internalType": "address[]",
@@ -188,7 +188,7 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "getDonors",
+      "name": "getTransactors",
       "outputs": [
         {
           "internalType": "address[]",
@@ -201,12 +201,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"accountAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"LogDepositMade\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"accountAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"LogWithdrawMade\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"accBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAccountAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getHugeDonors\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getThreshold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getDonors\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getpotentialLaunderers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newthreshold\",\"type\":\"uint256\"}],\"name\":\"setThreshold\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/transactiondetector.sol\":\"LaundererDetector\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/transactiondetector.sol\":{\"keccak256\":\"0x5fa6bcb291c4acdcde9872ea9eaac0b95dc59445b2b6fb9b6e110ca2c0693d58\",\"urls\":[\"bzz-raw://93ccec82512cd16ee2d3ff0e9c3643eec525f81441ada42785e2d5f4672818d1\",\"dweb:/ipfs/Qme3gxK9oGwGmVEH2jTFxox3i9Kz5RpUjTvHNExMTSVHjf\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"accountAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"LogDepositMade\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"accountAddress\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"LogWithdrawMade\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"accBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"deposit\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAccountAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getHugeTransactors\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getThreshold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getTransactors\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getpotentialLaunderers\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newthreshold\",\"type\":\"uint256\"}],\"name\":\"setThreshold\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/transactiondetector.sol\":\"LaundererDetector\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/transactiondetector.sol\":{\"keccak256\":\"0x5fa6bcb291c4acdcde9872ea9eaac0b95dc59445b2b6fb9b6e110ca2c0693d58\",\"urls\":[\"bzz-raw://93ccec82512cd16ee2d3ff0e9c3643eec525f81441ada42785e2d5f4672818d1\",\"dweb:/ipfs/Qme3gxK9oGwGmVEH2jTFxox3i9Kz5RpUjTvHNExMTSVHjf\"]}},\"version\":1}",
   "bytecode": "0x6080604052678ac7230489e800006004556802b5e3af16b1880000600555600880546001600160a01b031916331790556006805460ff191690556107a4806100486000396000f3fe6080604052600436106100915760003560e01c8063cd4256a811610059578063cd4256a81461018d578063d0e30db0146101a2578063e75235b8146101aa578063f3ac9670146101bf578063f6ae79ac1461026d57610091565b80631080c7cf1461009657806312065fe0146100bd5780632d26b309146100d25780632e1a7d4d14610137578063960bfe0414610163575b600080fd5b3480156100a257600080fd5b506100ab6102a0565b60408051918252519081900360200190f35b3480156100c957600080fd5b506100ab6102b4565b3480156100de57600080fd5b506100e76102b8565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561012357818101518382015260200161010b565b505050509050019250505060405180910390f35b34801561014357600080fd5b506101616004803603602081101561015a57600080fd5b503561031a565b005b34801561016f57600080fd5b506101616004803603602081101561018657600080fd5b5035610440565b34801561019957600080fd5b506100e7610466565b61016161054c565b3480156101b657600080fd5b506100ab610654565b3480156101cb57600080fd5b506101d4610687565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b83811015610218578181015183820152602001610200565b50505050905001838103825284818151815260200191508051906020019060200280838360005b8381101561025757818101518382015260200161023f565b5050505090500194505050505060405180910390f35b34801561027957600080fd5b506100ab6004803603602081101561029057600080fd5b50356001600160a01b031661075d565b336000908152600760205260409020545b90565b4790565b6060600180548060200260200160405190810160405280929190818152602001828054801561031057602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116102f2575b5050505050905090565b80670de0b6b3a764000002471015610370576040805162461bcd60e51b8152602060048201526014602482015273496e73756666696369656e742042616c616e636560601b604482015290519081900360640190fd5b6040513390670de0b6b3a7640000830280156108fc02916000818181858888f193505050501580156103a6573d6000803e3d6000fd5b50600180548082019091557fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b031916339081179091556000818152600760209081526040918290208054670de0b6b3a7640000860290819003909155825190815291517f5e0adeef7e7b24a7c2e0bf7c9947ca44b57e5b87a84b6c9848cb42247104e7fd9281900390910190a250565b6008546001600160a01b0316331461045757600080fd5b670de0b6b3a764000002600455565b6008546060906001600160a01b0316331461048057600080fd5b6005544711156104ec5760018054806020026020016040519081016040528092919081815260200182805480156104e057602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116104c2575b505050505090506102b1565b60008054806020026020016040519081016040528092919081815260200182805480156104e0576020028201919060005260206000209081546001600160a01b031681526001909101906020018083116104c257505050505090506102b1565b600180548082019091557fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b031916339081179091556000908152600760205260409020805434908101909155600454101561061c576002805460018181019092557f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b03191633179055600380549182018155600052347fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b909101555b60408051348152905133917fa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a193919081900360200190a2565b6008546000906001600160a01b0316331461066e57600080fd5b670de0b6b3a76400006004548161068157fe5b04905090565b60085460609081906001600160a01b031633146106a357600080fd5b60026003818054806020026020016040519081016040528092919081815260200182805480156106fc57602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116106de575b505050505091508080548060200260200160405190810160405280929190818152602001828054801561074e57602002820191906000526020600020905b81548152602001906001019080831161073a575b50505050509050915091509091565b6007602052600090815260409020548156fea265627a7a723158201647433984f90810c9af897ef67e1119c52e2110f4d87ea1f892042ee2a9e57164736f6c63430005100032",
   "deployedBytecode": "0x6080604052600436106100915760003560e01c8063cd4256a811610059578063cd4256a81461018d578063d0e30db0146101a2578063e75235b8146101aa578063f3ac9670146101bf578063f6ae79ac1461026d57610091565b80631080c7cf1461009657806312065fe0146100bd5780632d26b309146100d25780632e1a7d4d14610137578063960bfe0414610163575b600080fd5b3480156100a257600080fd5b506100ab6102a0565b60408051918252519081900360200190f35b3480156100c957600080fd5b506100ab6102b4565b3480156100de57600080fd5b506100e76102b8565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561012357818101518382015260200161010b565b505050509050019250505060405180910390f35b34801561014357600080fd5b506101616004803603602081101561015a57600080fd5b503561031a565b005b34801561016f57600080fd5b506101616004803603602081101561018657600080fd5b5035610440565b34801561019957600080fd5b506100e7610466565b61016161054c565b3480156101b657600080fd5b506100ab610654565b3480156101cb57600080fd5b506101d4610687565b604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b83811015610218578181015183820152602001610200565b50505050905001838103825284818151815260200191508051906020019060200280838360005b8381101561025757818101518382015260200161023f565b5050505090500194505050505060405180910390f35b34801561027957600080fd5b506100ab6004803603602081101561029057600080fd5b50356001600160a01b031661075d565b336000908152600760205260409020545b90565b4790565b6060600180548060200260200160405190810160405280929190818152602001828054801561031057602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116102f2575b5050505050905090565b80670de0b6b3a764000002471015610370576040805162461bcd60e51b8152602060048201526014602482015273496e73756666696369656e742042616c616e636560601b604482015290519081900360640190fd5b6040513390670de0b6b3a7640000830280156108fc02916000818181858888f193505050501580156103a6573d6000803e3d6000fd5b50600180548082019091557fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b031916339081179091556000818152600760209081526040918290208054670de0b6b3a7640000860290819003909155825190815291517f5e0adeef7e7b24a7c2e0bf7c9947ca44b57e5b87a84b6c9848cb42247104e7fd9281900390910190a250565b6008546001600160a01b0316331461045757600080fd5b670de0b6b3a764000002600455565b6008546060906001600160a01b0316331461048057600080fd5b6005544711156104ec5760018054806020026020016040519081016040528092919081815260200182805480156104e057602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116104c2575b505050505090506102b1565b60008054806020026020016040519081016040528092919081815260200182805480156104e0576020028201919060005260206000209081546001600160a01b031681526001909101906020018083116104c257505050505090506102b1565b600180548082019091557fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf60180546001600160a01b031916339081179091556000908152600760205260409020805434908101909155600454101561061c576002805460018181019092557f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace0180546001600160a01b03191633179055600380549182018155600052347fc2575a0e9e593c00f959f8c92f12db2869c3395a3b0502d05e2516446f71f85b909101555b60408051348152905133917fa8126f7572bb1fdeae5b5aa9ec126438b91f658a07873f009d041ae690f3a193919081900360200190a2565b6008546000906001600160a01b0316331461066e57600080fd5b670de0b6b3a76400006004548161068157fe5b04905090565b60085460609081906001600160a01b031633146106a357600080fd5b60026003818054806020026020016040519081016040528092919081815260200182805480156106fc57602002820191906000526020600020905b81546001600160a01b031681526001909101906020018083116106de575b505050505091508080548060200260200160405190810160405280929190818152602001828054801561074e57602002820191906000526020600020905b81548152602001906001019080831161073a575b50505050509050915091509091565b6007602052600090815260409020548156fea265627a7a723158201647433984f90810c9af897ef67e1119c52e2110f4d87ea1f892042ee2a9e57164736f6c63430005100032",
   "sourceMap": "3557:2776:1:-;;;3749:11;3724:36;;3789:11;3766:34;;4214:10;:23;;-1:-1:-1;;;;;;4214:23:1;4227:10;4214:23;;;4247:10;:14;;-1:-1:-1;;4247:14:1;;;3557:2776;;;;;;",
   "deployedSourceMap": "3557:2776:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;5208:145;;8:9:-1;5:2;;;30:1;27;20:12;5:2;5208:145:1;;;:::i;:::-;;;;;;;;;;;;;;;;5059:139;;8:9:-1;5:2;;;30:1;27;20:12;5:2;5059:139:1;;;:::i;6221:100::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;6221:100:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8::-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;6221:100:1;;;;;;;;;;;;;;;;;4334:334;;8:9:-1;5:2;;;30:1;27;20:12;5:2;4334:334:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;4334:334:1;;:::i;:::-;;5475:116;;8:9:-1;5:2;;;30:1;27;20:12;5:2;5475:116:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;5475:116:1;;:::i;5845:212::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;5845:212:1;;;:::i;4674:379::-;;;:::i;5359:110::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;5359:110:1;;;:::i;6063:152::-;;8:9:-1;5:2;;;30:1;27;20:12;5:2;6063:152:1;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;6063:152:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;6063:152:1;;;;;;;;;;;;;;;;;;;3984:46;;8:9:-1;5:2;;;30:1;27;20:12;5:2;3984:46:1;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;3984:46:1;-1:-1:-1;;;;;3984:46:1;;:::i;5208:145::-;5335:10;5257:7;5324:22;;;:10;:22;;;;;;5208:145;;:::o;5059:139::-;5128:21;5059:139;:::o;6221:100::-;6268:16;6303:11;6296:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;6296:18:1;;;;;;;;;;;;;;;;;;;;;;;6221:100;:::o;4334:334::-;4425:6;4433:7;4425:15;4400:21;:40;;4392:73;;;;;-1:-1:-1;;;4392:73:1;;;;;;;;;;;;-1:-1:-1;;;4392:73:1;;;;;;;;;;;;;;;4475:37;;:10;;4504:7;4495:16;;4475:37;;;;;;;;;4495:16;4475:10;:37;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;-1:-1;4522:11:1;27:10:-1;;23:18;;;45:23;;;4522:28:1;;;;-1:-1:-1;;;;;;4522:28:1;4539:10;4522:28;;;;;;-1:-1:-1;4560:22:1;;;:10;4522:28;4560:22;;;;;;;;:41;;4594:7;4586:15;;4560:41;;;;;;;4617:44;;;;;;;;;;;;;;;;;4334:334;:::o;5475:116::-;4127:10;;-1:-1:-1;;;;;4127:10:1;4113;:24;4105:33;;;;;;5578:6;5563:21;5551:9;:33;5475:116::o;5845:212::-;4127:10;;5915:16;;-1:-1:-1;;;;;4127:10:1;4113;:24;4105:33;;;;;;5971:7;;5947:21;:31;5943:107;;;5999:11;5992:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;5992:18:1;;;;;;;;;;;;;;;;;;;;;;;;;5943:107;6045:5;6038:12;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;6038:12:1;;;;;;;;;;;;;;;;;;;;;;;;4674:379;4759:11;27:10:-1;;23:18;;;45:23;;;4759:28:1;;;;-1:-1:-1;;;;;;4759:28:1;4776:10;4759:28;;;;;;-1:-1:-1;4806:22:1;;;:10;4759:28;4806:22;;;;:35;;4832:9;4806:35;;;;;;4867:9;;-1:-1:-1;4852:122:1;;;4891:15;27:10:-1;;39:1;23:18;;;45:23;;;4891:32:1;;;;-1:-1:-1;;;;;;4891:32:1;4912:10;4891:32;;;4937:10;27::-1;;23:18;;;45:23;;-1:-1;4937:26:1;4953:9;4937:26;;;;;4852:122;5009:37;;;5036:9;5009:37;;;;5024:10;;5009:37;;;;;;;;;;4674:379::o;5359:110::-;4127:10;;5419:4;;-1:-1:-1;;;;;4127:10:1;4113;:24;4105:33;;;;;;5455:6;5442:9;;:20;;;;;;5435:27;;5359:110;:::o;6063:152::-;4127:10;;6129:16;;;;-1:-1:-1;;;;;4127:10:1;4113;:24;4105:33;;;;;;6180:15;6197:10;6172:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;6172:36:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6063:152;;:::o;3984:46::-;;;;;;;;;;;;;:::o",
-  "source": "// SPDX-License-Identifier: GPL-3.0\n\n/** \npragma solidity >=0.5.16 <0.8.0;\n\ncontract Regulation {\n    \n    \n    struct donor_account {\n        int id;\n        address addr;\n        uint balance;\n        \n    }\n    \n    struct involve {\n        address addr;\n        uint amount;\n    }\n    \n    donor_account[] donors;\n    involve[] involved;\n    address payable organization;\n    address[] alldonors;\n    int donorCounter;\n    bool susTX;\n    uint maxBalance;\n    uint threshold;\n    \n   \n    \n    constructor() {\n        donorCounter = 0;\n        maxBalance = 50 ether;\n        susTX = false;\n    }\n    \n    /**\n     * Events\n     \n     event warning(string);\n     event allSuspects(address, uint);\n     event suspecteddonors(address);\n    \n    /**\n     * Modifier\n     *\n    \n    modifier onlyorganization() {\n        require(msg.sender == organization, \"Only organization can call!\");\n        _;\n    }\n    \n    modifier onlydonors() {\n        bool isdonor = false;\n        for(uint i = 0; i < donors.length; ++i) {\n            if(donors[i].addr == msg.sender) {\n                isdonor = true;\n                break;\n            }\n        }\n        require(isdonor, \"Only donors can call!\");\n        _;\n    }\n    \n    /**\n     * Utilities\n     *\n    \n    /**\n     * Contract Functions (only can be access organization)\n     *\n    \n    function setorganization(address _organizationAddress) public returns (string memory) {\n\n        address _organizationAddress = msg.sender; \n        address payable organization = address(uint160(_organizationsAddress));\n\n    \n       \n        return \"\";\n    }\n    \n    function setThreshold (uint _amount) public onlyorganization returns(string memory){\n        threshold = _amount * 1 ether;\n        return \"\";\n    }\n    \n    function getAlert () onlyorganization public {\n        if(susTX == true) {\n            emit warning(\"Alert: Huge amount transaction !\");\n            for(uint i = 0; i < involved.length; ++i) {\n                emit allSuspects(involved[i].addr, involved[i].amount);\n            }\n        } else {\n            emit warning(\"Message: No suspicious transaction !\");\n        }\n        if(address(this).balance > maxBalance) {\n            emit warning(\"Alert: Suspected crypto laundering !\");\n            for(uint i = 0; i < involved.length; ++i) {\n                emit suspecteddonors(alldonors[i]);\n            }\n        } else {\n            emit warning(\"Message: No suspicious laundering !\");\n        }\n    }\n    \n    /**\n     * Contract Functions\n     *\n    \n    function joinAsdonor() public payable returns (string memory) {\n        donors.push(donor_account(donorCounter++, msg.sender, address(msg.sender).balance));\n        return \"\";\n    }\n    \n    function deposit() public payable onlydonors {\n\n       \n\n        payable(address(this)).transfer(msg.value);\n        alldonors.push(msg.sender);\n        if(msg.value > threshold) {\n            involved.push(involve(msg.sender, msg.value));\n            susTX = true;\n        }\n    }\n    \n    function withdraw(uint _amount) public payable onlydonors {\n        msg.sender.transfer(_amount * 1 ether);\n        alldonors.push(msg.sender);\n        if(_amount > threshold) {\n            involved.push(involve(msg.sender, _amount));\n            susTX = true;\n        }\n    }\n    \n    function getContractBalance() public view returns(uint) {\n        return address(this).balance;\n    }\n    \n    /**\n     * Fallback function for the contract to receive ether\n     *\n    \n    receive () external payable {}\n}\n\n*/\n\npragma solidity >=0.5.16 <0.8.0;\n\ncontract LaundererDetector {\n    address[] private empty;\n    address[] private Donors;\n    address[] private hugeDonors;\n    uint[] private amountHuge;\n    uint private threshold = 10 * 10**18;\n    uint private maxSave = 50 * 10**18;\n    uint8 private ownerCount;\n    \n    event LogDepositMade(address indexed accountAddress, uint amount);\n    event LogWithdrawMade(address indexed accountAddress, uint amount);\n    mapping (address => uint256) public accBalance;\n    \n    address NGO;\n    \n    modifier onlyNGO(){\n        require(msg.sender == NGO);\n        _;\n        \n    }\n    \n    constructor() public payable {\n        NGO = msg.sender;\n        ownerCount = 0;\n        // accBalance = address(this).balance;\n        \n    }\n    \n    function withdraw(uint256 amount) public {       \n        require(address(this).balance >= amount* 1 ether, \"Insufficient Balance\");\n        msg.sender.transfer(amount * 1 ether);\n        Donors.push(msg.sender);\n        accBalance[msg.sender] -= amount* 1 ether;\n\n        emit LogWithdrawMade(msg.sender, amount* 1 ether);\n    }\n\n    function deposit() public payable {\n        // require(msg.value == amount);\n        Donors.push(msg.sender);\n        \n        accBalance[msg.sender] += msg.value;\n\n        if(msg.value > threshold){\n            hugeDonors.push(msg.sender);\n            amountHuge.push(msg.value);\n        }\n                    \n        emit LogDepositMade(msg.sender, msg.value);\n    }\n\n    function getBalance() public view returns (uint256) {\n        return address(this).balance;\n        // return accBalance[msg.sender];\n    }\n    \n    function getAccountAmount() public view returns (uint256) {\n        // return address(this).balance;\n        return accBalance[msg.sender];\n    }\n\n    function getThreshold() public onlyNGO view returns (uint) {\n        return threshold / (10**18);\n    }\n\n    function setThreshold(uint256 newthreshold) public onlyNGO {\n        threshold = newthreshold * 10**18;\n    }\n\n    // function potentialLaunderers() public  {\n    //     if(address(this).balance > maxSave){\n    //         for (uint i=0; i < 5; i += 1) {\n    //             potential_launderers[i] = Donors[i];\n    //         }\n    //     }\n    // }\n    \n    function getpotentialLaunderers() public onlyNGO view returns (address[] memory) {\n        if (address(this).balance > maxSave)\n            return Donors;\n\n        else\n            return empty;\n    }\n\n    function getHugeDonors() public onlyNGO view returns (address[] memory, uint[] memory) {\n        return (hugeDonors, amountHuge);\n    }\n\n    function getDonors() public view returns (address[] memory) {\n        return Donors;\n    }\n    \n    \n}",
+  "source": "// SPDX-License-Identifier: GPL-3.0\n\n/** \npragma solidity >=0.5.16 <0.8.0;\n\ncontract Regulation {\n    \n    \n    struct donor_account {\n        int id;\n        address addr;\n        uint balance;\n        \n    }\n    \n    struct involve {\n        address addr;\n        uint amount;\n    }\n    \n    donor_account[] donors;\n    involve[] involved;\n    address payable organization;\n    address[] alldonors;\n    int donorCounter;\n    bool susTX;\n    uint maxBalance;\n    uint threshold;\n    \n   \n    \n    constructor() {\n        donorCounter = 0;\n        maxBalance = 50 ether;\n        susTX = false;\n    }\n    \n    /**\n     * Events\n     \n     event warning(string);\n     event allSuspects(address, uint);\n     event suspecteddonors(address);\n    \n    /**\n     * Modifier\n     *\n    \n    modifier onlyorganization() {\n        require(msg.sender == organization, \"Only organization can call!\");\n        _;\n    }\n    \n    modifier onlydonors() {\n        bool isdonor = false;\n        for(uint i = 0; i < donors.length; ++i) {\n            if(donors[i].addr == msg.sender) {\n                isdonor = true;\n                break;\n            }\n        }\n        require(isdonor, \"Only donors can call!\");\n        _;\n    }\n    \n    /**\n     * Utilities\n     *\n    \n    /**\n     * Contract Functions (only can be access organization)\n     *\n    \n    function setorganization(address _organizationAddress) public returns (string memory) {\n\n        address _organizationAddress = msg.sender; \n        address payable organization = address(uint160(_organizationsAddress));\n\n    \n       \n        return \"\";\n    }\n    \n    function setThreshold (uint _amount) public onlyorganization returns(string memory){\n        threshold = _amount * 1 ether;\n        return \"\";\n    }\n    \n    function getAlert () onlyorganization public {\n        if(susTX == true) {\n            emit warning(\"Alert: Huge amount transaction !\");\n            for(uint i = 0; i < involved.length; ++i) {\n                emit allSuspects(involved[i].addr, involved[i].amount);\n            }\n        } else {\n            emit warning(\"Message: No suspicious transaction !\");\n        }\n        if(address(this).balance > maxBalance) {\n            emit warning(\"Alert: Suspected crypto laundering !\");\n            for(uint i = 0; i < involved.length; ++i) {\n                emit suspecteddonors(alldonors[i]);\n            }\n        } else {\n            emit warning(\"Message: No suspicious laundering !\");\n        }\n    }\n    \n    /**\n     * Contract Functions\n     *\n    \n    function joinAsdonor() public payable returns (string memory) {\n        donors.push(donor_account(donorCounter++, msg.sender, address(msg.sender).balance));\n        return \"\";\n    }\n    \n    function deposit() public payable onlydonors {\n\n       \n\n        payable(address(this)).transfer(msg.value);\n        alldonors.push(msg.sender);\n        if(msg.value > threshold) {\n            involved.push(involve(msg.sender, msg.value));\n            susTX = true;\n        }\n    }\n    \n    function withdraw(uint _amount) public payable onlydonors {\n        msg.sender.transfer(_amount * 1 ether);\n        alldonors.push(msg.sender);\n        if(_amount > threshold) {\n            involved.push(involve(msg.sender, _amount));\n            susTX = true;\n        }\n    }\n    \n    function getContractBalance() public view returns(uint) {\n        return address(this).balance;\n    }\n    \n    /**\n     * Fallback function for the contract to receive ether\n     *\n    \n    receive () external payable {}\n}\n\n*/\n\npragma solidity >=0.5.16 <0.8.0;\n\ncontract LaundererDetector {\n    address[] private empty;\n    address[] private transactors;\n    address[] private hugeTransactors;\n    uint[] private amountHuge;\n    uint private threshold = 10 * 10**18;\n    uint private maxSave = 50 * 10**18;\n    uint8 private ownerCount;\n    \n    event LogDepositMade(address indexed accountAddress, uint amount);\n    event LogWithdrawMade(address indexed accountAddress, uint amount);\n    mapping (address => uint256) public accBalance;\n    \n    address NGO;\n    \n    modifier onlyNGO(){\n        require(msg.sender == NGO);\n        _;\n        \n    }\n    \n    constructor() public payable {\n        NGO = msg.sender;\n        ownerCount = 0;\n        // accBalance = address(this).balance;\n        \n    }\n    \n    function withdraw(uint256 amount) public {       \n        require(address(this).balance >= amount* 1 ether, \"Insufficient Balance\");\n        msg.sender.transfer(amount * 1 ether);\n        transactors.push(msg.sender);\n        accBalance[msg.sender] -= amount* 1 ether;\n\n        emit LogWithdrawMade(msg.sender, amount* 1 ether);\n    }\n\n    function deposit() public payable {\n        // require(msg.value == amount);\n        transactors.push(msg.sender);\n        \n        accBalance[msg.sender] += msg.value;\n\n        if(msg.value > threshold){\n            hugeTransactors.push(msg.sender);\n            amountHuge.push(msg.value);\n        }\n                    \n        emit LogDepositMade(msg.sender, msg.value);\n    }\n\n    function getBalance() public view returns (uint256) {\n        return address(this).balance;\n        // return accBalance[msg.sender];\n    }\n    \n    function getAccountAmount() public view returns (uint256) {\n        // return address(this).balance;\n        return accBalance[msg.sender];\n    }\n\n    function getThreshold() public onlyNGO view returns (uint) {\n        return threshold / (10**18);\n    }\n\n    function setThreshold(uint256 newthreshold) public onlyNGO {\n        threshold = newthreshold * 10**18;\n    }\n\n    // function potentialLaunderers() public  {\n    //     if(address(this).balance > maxSave){\n    //         for (uint i=0; i < 5; i += 1) {\n    //             potential_launderers[i] = transactors[i];\n    //         }\n    //     }\n    // }\n    \n    function getpotentialLaunderers() public onlyNGO view returns (address[] memory) {\n        if (address(this).balance > maxSave)\n            return transactors;\n\n        else\n            return empty;\n    }\n\n    function getHugeTransactors() public onlyNGO view returns (address[] memory, uint[] memory) {\n        return (hugeTransactors, amountHuge);\n    }\n\n    function getTransactors() public view returns (address[] memory) {\n        return transactors;\n    }\n    \n    \n}",
   "sourcePath": "C:\\Users\\User\\Downloads\\blockchain_project-main\\contracts\\transactiondetector.sol",
   "ast": {
     "absolutePath": "project:/contracts/transactiondetector.sol",
@@ -285,7 +285,7 @@
           {
             "constant": false,
             "id": 40,
-            "name": "Donors",
+            "name": "transactors",
             "nodeType": "VariableDeclaration",
             "scope": 301,
             "src": "3619:29:1",
@@ -322,7 +322,7 @@
           {
             "constant": false,
             "id": 43,
-            "name": "hugeDonors",
+            "name": "hugeTransactors",
             "nodeType": "VariableDeclaration",
             "scope": 301,
             "src": "3654:33:1",
@@ -1516,7 +1516,7 @@
                       "expression": {
                         "argumentTypes": null,
                         "id": 131,
-                        "name": "Donors",
+                        "name": "transactors",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 40,
@@ -1912,7 +1912,7 @@
                       "expression": {
                         "argumentTypes": null,
                         "id": 159,
-                        "name": "Donors",
+                        "name": "transactors",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 40,
@@ -2174,7 +2174,7 @@
                             "expression": {
                               "argumentTypes": null,
                               "id": 178,
-                              "name": "hugeDonors",
+                              "name": "hugeTransactors",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 43,
@@ -3212,7 +3212,7 @@
                     "expression": {
                       "argumentTypes": null,
                       "id": 269,
-                      "name": "Donors",
+                      "name": "transactors",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 40,
@@ -3326,7 +3326,7 @@
                       {
                         "argumentTypes": null,
                         "id": 286,
-                        "name": "hugeDonors",
+                        "name": "hugeTransactors",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 43,
@@ -3395,7 +3395,7 @@
                 "src": "6100:14:1"
               }
             ],
-            "name": "getHugeDonors",
+            "name": "getHugeTransactors",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 276,
@@ -3499,7 +3499,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "id": 297,
-                    "name": "Donors",
+                    "name": "transactors",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 40,
@@ -3521,7 +3521,7 @@
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "getDonors",
+            "name": "getTransactors",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 292,
@@ -3671,7 +3671,7 @@
           {
             "attributes": {
               "constant": false,
-              "name": "Donors",
+              "name": "transactors",
               "scope": 301,
               "stateVariable": true,
               "storageLocation": "default",
@@ -3709,7 +3709,7 @@
           {
             "attributes": {
               "constant": false,
-              "name": "hugeDonors",
+              "name": "hugeTransactors",
               "scope": 301,
               "stateVariable": true,
               "storageLocation": "default",
@@ -5022,7 +5022,7 @@
                                   ],
                                   "referencedDeclaration": 40,
                                   "type": "address[] storage ref",
-                                  "value": "Donors"
+                                  "value": "transactors"
                                 },
                                 "id": 131,
                                 "name": "Identifier",
@@ -5432,7 +5432,7 @@
                                   ],
                                   "referencedDeclaration": 40,
                                   "type": "address[] storage ref",
-                                  "value": "Donors"
+                                  "value": "transactors"
                                 },
                                 "id": 159,
                                 "name": "Identifier",
@@ -5712,7 +5712,7 @@
                                           ],
                                           "referencedDeclaration": 43,
                                           "type": "address[] storage ref",
-                                          "value": "hugeDonors"
+                                          "value": "hugeTransactors"
                                         },
                                         "id": 178,
                                         "name": "Identifier",
@@ -6923,7 +6923,7 @@
                               ],
                               "referencedDeclaration": 40,
                               "type": "address[] storage ref",
-                              "value": "Donors"
+                              "value": "transactors"
                             },
                             "id": 269,
                             "name": "Identifier",
@@ -6979,7 +6979,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "name": "getHugeDonors",
+              "name": "getHugeTransactors",
               "scope": 301,
               "stateMutability": "view",
               "superFunction": null,
@@ -7129,7 +7129,7 @@
                               ],
                               "referencedDeclaration": 43,
                               "type": "address[] storage ref",
-                              "value": "hugeDonors"
+                              "value": "hugeTransactors"
                             },
                             "id": 286,
                             "name": "Identifier",
@@ -7178,7 +7178,7 @@
               "modifiers": [
                 null
               ],
-              "name": "getDonors",
+              "name": "getTransactors",
               "scope": 301,
               "stateMutability": "view",
               "superFunction": null,
@@ -7256,7 +7256,7 @@
                           ],
                           "referencedDeclaration": 40,
                           "type": "address[] storage ref",
-                          "value": "Donors"
+                          "value": "transactors"
                         },
                         "id": 297,
                         "name": "Identifier",

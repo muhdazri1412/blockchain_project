@@ -32,9 +32,9 @@ contract("Check for transactions", function(accounts){
    it("Check for transaction more than threshold", async() =>{
       const NGO = await transactiondetector.deployed();
 
-      let hugeDonors, amountHuge = await NGO.getHugeDonors();
+      let hugeTransactors, amountHuge = await NGO.getHugeTransactors();
       
-         console.log(hugeDonors);
+         console.log(hugeTransactors);
          console.log(amountHuge);
    });
 
@@ -71,9 +71,9 @@ contract("Check for possible money laundering (deposit exceeding threshold)", fu
    it("Check for transaction more than threshold", async() =>{
       const NGO = await transactiondetector.deployed();
 
-      let hugeDonors, amountHuge = await NGO.getHugeDonors();
+      let hugeTransactors, amountHuge = await NGO.getHugeTransactors();
          
-      console.log(hugeDonors);
+      console.log(hugeTransactors);
       console.log(amountHuge);
    });
 
@@ -129,9 +129,9 @@ contract("POSSIBLE MONEY LAUNDERING (SMART CONTRACT BALANCE EXCEED THRESHOLD)", 
    it("Check for transaction more than threshold", async() =>{
       const NGO = await transactiondetector.deployed();
 
-      let hugeDonors, amountHuge = await NGO.getHugeDonors();
+      let hugeTransactors, amountHuge = await NGO.getHugeTransactors();
          
-      console.log(hugeDonors);
+      console.log(hugeTransactors);
       console.log(amountHuge);
    });
 

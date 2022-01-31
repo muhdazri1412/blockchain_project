@@ -89,8 +89,11 @@ contract TransactionDetector {
     // }
     
     function getpotentialLaunderers() public onlyNGO view returns (address[] memory) {
-        if (address(this).balance > maxSave)
-            return transactors;
+        if (address(this).balance > maxSave){
+
+             emit 
+             return transactors;
+        }
 
         else
             return empty;
